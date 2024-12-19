@@ -18,6 +18,7 @@
 #define HEALTHFILEPATH "health_data.txt"
 
 static int choice;
+static int consumed_cal;
 
 int main() {
 	// To initialize the health data object
@@ -28,7 +29,7 @@ int main() {
 
     // ToCode: to run the "Healthcare Management Systems" until all calories are used up or the user wants to exit the system
     do {
-    	if (remainig_cal=0){//remaining_calories are zero
+    	if (consumed_cal=0){          //consumed_calories are zero
             printf("You have consumed all your calories for today! \n");
 		} 
 		else{
@@ -46,19 +47,18 @@ int main() {
 		// ToCode: to run the sysmtem based on the user's choice
         switch (choice) {
             case 1:
-            	
+            	printf("cal_exercise");   //output all saved exercise candidates
                 break;
                 
             case 2:
-            	
+            	printf("cal_diets");   //output all saved diet candidates
                 break;
                 
             case 3:
-            	
+            	printf("cal_healthdata");   //output current information based on the exercise and intake by selected by the user
                 break;
                 
             case 4:
-            	
     			printf("Exit the system.\n");
     			printf("=======================================================================\n");
                 break;
@@ -67,8 +67,7 @@ int main() {
                 printf("[Error] Invalid option. \n");
                 printf("Please try again! \n");
         } 
-    } while (choice = 4);
+    } while (choice != 4);
 
     return 0;
 }
-
