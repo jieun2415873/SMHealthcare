@@ -42,12 +42,12 @@ int main() {
         	printf("Select the desired number: ");
         	scanf("%d", &choice);
         	printf("=======================================================================\n");
-        }
+        } 
         
 		// ToCode: to run the sysmtem based on the user's choice
         switch (choice) {
             case 1:
-            	printf(/);  //output all saved exercise candidates
+            	printf("cal_exercise");  //output all saved exercise candidates
                 break;
                 
             case 2:
