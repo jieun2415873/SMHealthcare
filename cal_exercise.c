@@ -60,7 +60,7 @@ void inputExercise(HealthData* health_data) {
     
     // ToCode: to provide the options for the exercises to be selected
     printf("The list of exercises: \n");
-    for(i=0; i<exercise_list_size; i++)
+    for(i=0; i<exercise_list_size; i++)    //provide exercise selection options
     
 
     // ToCode: to enter the exercise to be chosen with exit option\
