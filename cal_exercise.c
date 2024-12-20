@@ -72,5 +72,5 @@ void inputExercise(HealthData* health_data) {
 
     // ToCode: to enter the selected exercise and total calcories burned in the health data
     
-
+    
 }
