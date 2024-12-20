@@ -25,8 +25,8 @@ int main() {
     HealthData health_data = {0};
     
     // Tocode: to read the list of the exercises and diets
-    loadExercises(EXERCISEFILEPATH);   //load exercise list
-    loadDiets(DIETFILEPATH);   // load diets list
+    loadExercises(EXERCISEFILEPATH);     //load exercise list
+    loadDiets(DIETFILEPATH);            // load diets list
     
 
     // ToCode: to run the "Healthcare Management Systems" until all calories are used up or the user wants to exit the system
@@ -49,15 +49,15 @@ int main() {
 		// ToCode: to run the sysmtem based on the user's choice
         switch (choice) {
             case 1:
-            	printf("cal_exercise");  //output all saved exercise candidates
+            	loadExercises(EXERCISEFILEPATH);  //output exercise list
                 break;
                 
             case 2:
-            	printf("cal_diets");   //output all saved diet candidates
+            	loadDiets(DIETFILEPATH);   //output diets list
                 break;
                 
             case 3:
-            	printf("cal_healthdata");   //output current information based on the exercise and intake by selected by the user
+            	printHealthdata();   //output current information based on the exercise and intake by selected by the user
                 break;
                 
             case 4:

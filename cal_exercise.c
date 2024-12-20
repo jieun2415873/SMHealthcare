@@ -19,7 +19,7 @@
 
 // To declare the structure of the exercises
 static Exercise exercise_list[MAX_EXERCISES];
-int exercise_list_size = 0;
+static int exercise_list_size = 0;
 
 
 /*
@@ -61,7 +61,7 @@ void inputExercise(HealthData* health_data) {
     // ToCode: to provide the options for the exercises to be selected
     printf("The list of exercises: \n");
     for(i=0;i<exercise_list_size;i++){
-    	printf("%d")
+    	printf("%d");
 	}
     
 
@@ -75,6 +75,6 @@ void inputExercise(HealthData* health_data) {
     scanf("%d", &duration);
 
     // ToCode: to enter the selected exercise and total calcories burned in the health data
-    int calories_burned = exercise_list[choice-1].calories * duration;
+    
     
 }
